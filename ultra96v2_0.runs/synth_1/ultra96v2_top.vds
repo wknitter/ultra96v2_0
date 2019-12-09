@@ -1,0 +1,520 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:39:14 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat Dec  7 23:42:12 2019
+# Process ID: 5536
+# Current directory: /home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1
+# Command line: vivado -log ultra96v2_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ultra96v2_top.tcl
+# Log file: /home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/ultra96v2_top.vds
+# Journal file: /home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source ultra96v2_top.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.2/data/ip'.
+add_files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1584.109 ; gain = 48.656 ; free physical = 25253 ; free virtual = 29316
+Command: synth_design -top ultra96v2_top -part xczu3eg-sbva484-1-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5671 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2417.512 ; gain = 0.000 ; free physical = 24346 ; free virtual = 28412
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_top' [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/new/ultra96v2_top.v:23]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [/tools/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [/tools/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd' [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:2099]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_axi_bram_ctrl_0_0' [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_axi_bram_ctrl_0_0' (2#1) [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_axi_uart16550_0_0' [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_axi_uart16550_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_axi_uart16550_0_0' (3#1) [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_axi_uart16550_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_uart16550_0' of module 'ultra96v2_bd_axi_uart16550_0_0' has 35 connections declared, but only 26 given [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:2345]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_blk_mem_gen_0_0' [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_blk_mem_gen_0_0' (4#1) [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_axi_gpio_0_1' [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_axi_gpio_0_1' (5#1) [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_axi_gpio_0_0' [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_axi_gpio_0_0' (6#1) [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_ps8_0_axi_periph_1' [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:2694]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_D4NOMI' [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:12]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_auto_ds_0' [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_auto_ds_0' (7#1) [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_auto_pc_0' [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_auto_pc_0' (8#1) [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'ultra96v2_bd_auto_pc_0' has 56 connections declared, but only 54 given [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:343]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_D4NOMI' (9#1) [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:12]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_FO4DD6' [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:400]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_auto_ds_1' [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_auto_ds_1' (10#1) [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_auto_pc_1' [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_auto_pc_1' (11#1) [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_auto_pc_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'ultra96v2_bd_auto_pc_1' has 56 connections declared, but only 54 given [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:731]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_FO4DD6' (12#1) [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:400]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_A1OTM' [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:788]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_auto_ds_2' [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_auto_ds_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_auto_ds_2' (13#1) [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_auto_ds_2_stub.v:6]
+WARNING: [Synth 8-7023] instance 'auto_ds' of module 'ultra96v2_bd_auto_ds_2' has 72 connections declared, but only 68 given [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:1067]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_A1OTM' (14#1) [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:788]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_65CSOA' [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:1138]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_auto_ds_3' [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_auto_ds_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_auto_ds_3' (15#1) [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_auto_ds_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_auto_pc_2' [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_auto_pc_2' (16#1) [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_auto_pc_2_stub.v:6]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'ultra96v2_bd_auto_pc_2' has 56 connections declared, but only 54 given [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:1469]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_65CSOA' (17#1) [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:1138]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_DVUNJT' [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:1526]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_DVUNJT' (18#1) [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:1526]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_AAXSOP' [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:1812]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_AAXSOP' (19#1) [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:1812]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_xbar_0' [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_xbar_0' (20#1) [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_xbar_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'ultra96v2_bd_xbar_0' has 78 connections declared, but only 76 given [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:3995]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_ps8_0_axi_periph_1' (21#1) [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:2694]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_rst_ps8_0_100M_1' [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_rst_ps8_0_100M_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_rst_ps8_0_100M_1' (22#1) [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_rst_ps8_0_100M_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'rst_ps8_0_100M' of module 'ultra96v2_bd_rst_ps8_0_100M_1' has 10 connections declared, but only 6 given [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:2601]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_zynq_ultra_ps_e_0_0' [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_zynq_ultra_ps_e_0_0' (23#1) [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/.Xil/Vivado-5536-parallels-Parallels-Virtual-Platform/realtime/ultra96v2_bd_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd' (24#1) [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:2099]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_top' (25#1) [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/new/ultra96v2_top.v:23]
+WARNING: [Synth 8-3331] design s01_couplers_imp_AAXSOP has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s01_couplers_imp_AAXSOP has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s01_couplers_imp_AAXSOP has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s01_couplers_imp_AAXSOP has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_DVUNJT has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_DVUNJT has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_DVUNJT has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_DVUNJT has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[39]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[38]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[37]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[36]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[35]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[34]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[33]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[32]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[31]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[30]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[29]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[28]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[27]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[26]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[25]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[24]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[23]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[22]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[21]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[20]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[19]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[18]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[17]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[16]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[15]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[14]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_araddr[13]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[39]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[38]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[37]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[36]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[35]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[34]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[33]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[32]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[31]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[30]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[29]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[28]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[27]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[26]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[25]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[24]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[23]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[22]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[21]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[20]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[19]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[18]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[17]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[16]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[15]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[14]
+WARNING: [Synth 8-3331] design m03_couplers_imp_65CSOA has unconnected port S_AXI_awaddr[13]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[39]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[38]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[37]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[36]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[35]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[34]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[33]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[32]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[31]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[30]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[29]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[28]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[27]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[26]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[25]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[24]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[23]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[22]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[21]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[20]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[19]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[18]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[17]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[16]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[15]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[14]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_araddr[13]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_awaddr[39]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_awaddr[38]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_awaddr[37]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_awaddr[36]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_awaddr[35]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_awaddr[34]
+WARNING: [Synth 8-3331] design m02_couplers_imp_A1OTM has unconnected port S_AXI_awaddr[33]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 2472.320 ; gain = 54.809 ; free physical = 24372 ; free virtual = 28441
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2472.320 ; gain = 54.809 ; free physical = 24369 ; free virtual = 28438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 2472.320 ; gain = 54.809 ; free physical = 24369 ; free virtual = 28438
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.03 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2483.227 ; gain = 0.000 ; free physical = 24364 ; free virtual = 28432
+INFO: [Netlist 29-17] Analyzing 17 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/ultra96v2_bd_zynq_ultra_ps_e_0_0/ultra96v2_bd_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/ultra96v2_bd_zynq_ultra_ps_e_0_0/ultra96v2_bd_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/zynq_ultra_ps_e_0'
+Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axi_gpio_0_0/ultra96v2_bd_axi_gpio_0_0/ultra96v2_bd_axi_gpio_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/hd_gpio'
+Finished Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axi_gpio_0_0/ultra96v2_bd_axi_gpio_0_0/ultra96v2_bd_axi_gpio_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/hd_gpio'
+Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_xbar_0/ultra96v2_bd_xbar_0/ultra96v2_bd_xbar_0_in_context.xdc] for cell 'ultra96v2_bd_i/ps8_0_axi_periph/xbar'
+Finished Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_xbar_0/ultra96v2_bd_xbar_0/ultra96v2_bd_xbar_0_in_context.xdc] for cell 'ultra96v2_bd_i/ps8_0_axi_periph/xbar'
+Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_rst_ps8_0_100M_1/ultra96v2_bd_rst_ps8_0_100M_1/ultra96v2_bd_rst_ps8_0_100M_1_in_context.xdc] for cell 'ultra96v2_bd_i/rst_ps8_0_100M'
+Finished Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_rst_ps8_0_100M_1/ultra96v2_bd_rst_ps8_0_100M_1/ultra96v2_bd_rst_ps8_0_100M_1_in_context.xdc] for cell 'ultra96v2_bd_i/rst_ps8_0_100M'
+Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axi_gpio_0_1/ultra96v2_bd_axi_gpio_0_1/ultra96v2_bd_axi_gpio_0_1_in_context.xdc] for cell 'ultra96v2_bd_i/fan_pwm'
+Finished Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axi_gpio_0_1/ultra96v2_bd_axi_gpio_0_1/ultra96v2_bd_axi_gpio_0_1_in_context.xdc] for cell 'ultra96v2_bd_i/fan_pwm'
+Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axi_bram_ctrl_0_0/ultra96v2_bd_axi_bram_ctrl_0_0/ultra96v2_bd_axi_bram_ctrl_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/axi_bram_ctrl_0'
+Finished Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axi_bram_ctrl_0_0/ultra96v2_bd_axi_bram_ctrl_0_0/ultra96v2_bd_axi_bram_ctrl_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/axi_bram_ctrl_0'
+Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_blk_mem_gen_0_0/ultra96v2_bd_blk_mem_gen_0_0/ultra96v2_bd_blk_mem_gen_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/blk_mem_gen_0'
+Finished Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_blk_mem_gen_0_0/ultra96v2_bd_blk_mem_gen_0_0/ultra96v2_bd_blk_mem_gen_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/blk_mem_gen_0'
+Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axi_uart16550_0_0/ultra96v2_bd_axi_uart16550_0_0/ultra96v2_bd_axi_uart16550_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/axi_uart16550_0'
+Finished Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axi_uart16550_0_0/ultra96v2_bd_axi_uart16550_0_0/ultra96v2_bd_axi_uart16550_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/axi_uart16550_0'
+Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_ds_0/ultra96v2_bd_auto_ds_0/ultra96v2_bd_auto_ds_1_in_context.xdc] for cell 'ultra96v2_bd_i/ps8_0_axi_periph/m00_couplers/auto_ds'
+Finished Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_ds_0/ultra96v2_bd_auto_ds_0/ultra96v2_bd_auto_ds_1_in_context.xdc] for cell 'ultra96v2_bd_i/ps8_0_axi_periph/m00_couplers/auto_ds'
+Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_pc_0/ultra96v2_bd_auto_pc_0/ultra96v2_bd_auto_pc_1_in_context.xdc] for cell 'ultra96v2_bd_i/ps8_0_axi_periph/m00_couplers/auto_pc'
+Finished Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_pc_0/ultra96v2_bd_auto_pc_0/ultra96v2_bd_auto_pc_1_in_context.xdc] for cell 'ultra96v2_bd_i/ps8_0_axi_periph/m00_couplers/auto_pc'
+Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_ds_1/ultra96v2_bd_auto_ds_1/ultra96v2_bd_auto_ds_1_in_context.xdc] for cell 'ultra96v2_bd_i/ps8_0_axi_periph/m01_couplers/auto_ds'
+Finished Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_ds_1/ultra96v2_bd_auto_ds_1/ultra96v2_bd_auto_ds_1_in_context.xdc] for cell 'ultra96v2_bd_i/ps8_0_axi_periph/m01_couplers/auto_ds'
+Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_pc_1/ultra96v2_bd_auto_pc_1/ultra96v2_bd_auto_pc_1_in_context.xdc] for cell 'ultra96v2_bd_i/ps8_0_axi_periph/m01_couplers/auto_pc'
+Finished Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_pc_1/ultra96v2_bd_auto_pc_1/ultra96v2_bd_auto_pc_1_in_context.xdc] for cell 'ultra96v2_bd_i/ps8_0_axi_periph/m01_couplers/auto_pc'
+Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_ds_2/ultra96v2_bd_auto_ds_2/ultra96v2_bd_auto_ds_3_in_context.xdc] for cell 'ultra96v2_bd_i/ps8_0_axi_periph/m02_couplers/auto_ds'
+Finished Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_ds_2/ultra96v2_bd_auto_ds_2/ultra96v2_bd_auto_ds_3_in_context.xdc] for cell 'ultra96v2_bd_i/ps8_0_axi_periph/m02_couplers/auto_ds'
+Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_ds_3/ultra96v2_bd_auto_ds_3/ultra96v2_bd_auto_ds_3_in_context.xdc] for cell 'ultra96v2_bd_i/ps8_0_axi_periph/m03_couplers/auto_ds'
+Finished Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_ds_3/ultra96v2_bd_auto_ds_3/ultra96v2_bd_auto_ds_3_in_context.xdc] for cell 'ultra96v2_bd_i/ps8_0_axi_periph/m03_couplers/auto_ds'
+Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_pc_2/ultra96v2_bd_auto_pc_2/ultra96v2_bd_auto_pc_2_in_context.xdc] for cell 'ultra96v2_bd_i/ps8_0_axi_periph/m03_couplers/auto_pc'
+Finished Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_pc_2/ultra96v2_bd_auto_pc_2/ultra96v2_bd_auto_pc_2_in_context.xdc] for cell 'ultra96v2_bd_i/ps8_0_axi_periph/m03_couplers/auto_pc'
+Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/constrs_1/new/ultra96v2_0.xdc]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 26]]'. [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/constrs_1/new/ultra96v2_0.xdc:135]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 65]]'. [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/constrs_1/new/ultra96v2_0.xdc:138]
+Finished Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/constrs_1/new/ultra96v2_0.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/parallels/ultra96v2_0/ultra96v2_0.srcs/constrs_1/new/ultra96v2_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ultra96v2_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ultra96v2_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2598.039 ; gain = 0.000 ; free physical = 24272 ; free virtual = 28342
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 17 instances were transformed.
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 17 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2598.039 ; gain = 0.000 ; free physical = 24272 ; free virtual = 28342
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ultra96v2_bd_i/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2598.039 ; gain = 180.527 ; free physical = 24346 ; free virtual = 28416
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2598.039 ; gain = 180.527 ; free physical = 24349 ; free virtual = 28419
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/hd_gpio. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/ps8_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/ps8_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/rst_ps8_0_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/fan_pwm. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/axi_bram_ctrl_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/axi_uart16550_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/ps8_0_axi_periph/m00_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/ps8_0_axi_periph/m00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/ps8_0_axi_periph/m01_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/ps8_0_axi_periph/m01_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/ps8_0_axi_periph/m02_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/ps8_0_axi_periph/m03_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/ps8_0_axi_periph/m03_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2598.039 ; gain = 180.527 ; free physical = 24349 ; free virtual = 28419
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:21 . Memory (MB): peak = 2598.039 ; gain = 180.527 ; free physical = 24348 ; free virtual = 28419
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:22 . Memory (MB): peak = 2598.039 ; gain = 180.527 ; free physical = 24331 ; free virtual = 28407
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:41 ; elapsed = 00:01:05 . Memory (MB): peak = 3090.406 ; gain = 672.895 ; free physical = 23686 ; free virtual = 27762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:01:05 . Memory (MB): peak = 3091.406 ; gain = 673.895 ; free physical = 23685 ; free virtual = 27762
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:01:05 . Memory (MB): peak = 3103.438 ; gain = 685.926 ; free physical = 23684 ; free virtual = 27760
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:01:08 . Memory (MB): peak = 3117.312 ; gain = 699.801 ; free physical = 23684 ; free virtual = 27760
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:01:08 . Memory (MB): peak = 3117.312 ; gain = 699.801 ; free physical = 23684 ; free virtual = 27760
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:01:08 . Memory (MB): peak = 3117.312 ; gain = 699.801 ; free physical = 23684 ; free virtual = 27760
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:01:08 . Memory (MB): peak = 3117.312 ; gain = 699.801 ; free physical = 23684 ; free virtual = 27760
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:01:08 . Memory (MB): peak = 3117.312 ; gain = 699.801 ; free physical = 23684 ; free virtual = 27760
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:01:08 . Memory (MB): peak = 3117.312 ; gain = 699.801 ; free physical = 23684 ; free virtual = 27760
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------+----------+
+|      |BlackBox name                    |Instances |
++------+---------------------------------+----------+
+|1     |ultra96v2_bd_xbar_0              |         1|
+|2     |ultra96v2_bd_auto_ds_0           |         1|
+|3     |ultra96v2_bd_auto_pc_0           |         1|
+|4     |ultra96v2_bd_auto_ds_1           |         1|
+|5     |ultra96v2_bd_auto_pc_1           |         1|
+|6     |ultra96v2_bd_auto_ds_2           |         1|
+|7     |ultra96v2_bd_auto_ds_3           |         1|
+|8     |ultra96v2_bd_auto_pc_2           |         1|
+|9     |ultra96v2_bd_axi_bram_ctrl_0_0   |         1|
+|10    |ultra96v2_bd_axi_uart16550_0_0   |         1|
+|11    |ultra96v2_bd_blk_mem_gen_0_0     |         1|
+|12    |ultra96v2_bd_axi_gpio_0_1        |         1|
+|13    |ultra96v2_bd_axi_gpio_0_0        |         1|
+|14    |ultra96v2_bd_rst_ps8_0_100M_1    |         1|
+|15    |ultra96v2_bd_zynq_ultra_ps_e_0_0 |         1|
++------+---------------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------+------+
+|      |Cell                             |Count |
++------+---------------------------------+------+
+|1     |ultra96v2_bd_auto_ds_0           |     1|
+|2     |ultra96v2_bd_auto_ds_1           |     1|
+|3     |ultra96v2_bd_auto_ds_2           |     1|
+|4     |ultra96v2_bd_auto_ds_3           |     1|
+|5     |ultra96v2_bd_auto_pc_0           |     1|
+|6     |ultra96v2_bd_auto_pc_1           |     1|
+|7     |ultra96v2_bd_auto_pc_2           |     1|
+|8     |ultra96v2_bd_axi_bram_ctrl_0_0   |     1|
+|9     |ultra96v2_bd_axi_gpio_0_0        |     1|
+|10    |ultra96v2_bd_axi_gpio_0_1        |     1|
+|11    |ultra96v2_bd_axi_uart16550_0_0   |     1|
+|12    |ultra96v2_bd_blk_mem_gen_0_0     |     1|
+|13    |ultra96v2_bd_rst_ps8_0_100M_1    |     1|
+|14    |ultra96v2_bd_xbar_0              |     1|
+|15    |ultra96v2_bd_zynq_ultra_ps_e_0_0 |     1|
+|16    |IBUF                             |     1|
+|17    |IOBUF                            |    17|
+|18    |OBUF                             |     1|
++------+---------------------------------+------+
+
+Report Instance Areas: 
++------+---------------------+--------------------------------+------+
+|      |Instance             |Module                          |Cells |
++------+---------------------+--------------------------------+------+
+|1     |top                  |                                |  4248|
+|2     |  ultra96v2_bd_i     |ultra96v2_bd                    |  4229|
+|3     |    ps8_0_axi_periph |ultra96v2_bd_ps8_0_axi_periph_1 |  3241|
+|4     |      m00_couplers   |m00_couplers_imp_D4NOMI         |   487|
+|5     |      m01_couplers   |m01_couplers_imp_FO4DD6         |   487|
+|6     |      m02_couplers   |m02_couplers_imp_A1OTM          |   264|
+|7     |      m03_couplers   |m03_couplers_imp_65CSOA         |   379|
++------+---------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:01:08 . Memory (MB): peak = 3117.312 ; gain = 699.801 ; free physical = 23684 ; free virtual = 27760
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 12 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:38 ; elapsed = 00:00:58 . Memory (MB): peak = 3117.312 ; gain = 574.082 ; free physical = 23725 ; free virtual = 27801
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:01:08 . Memory (MB): peak = 3117.320 ; gain = 699.801 ; free physical = 23725 ; free virtual = 27801
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3120.281 ; gain = 0.000 ; free physical = 23790 ; free virtual = 27869
+INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3143.062 ; gain = 0.000 ; free physical = 23730 ; free virtual = 27808
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 18 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 17 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+69 Infos, 110 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:56 ; elapsed = 00:01:26 . Memory (MB): peak = 3143.062 ; gain = 1558.953 ; free physical = 23853 ; free virtual = 27931
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3143.062 ; gain = 0.000 ; free physical = 23855 ; free virtual = 27933
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/parallels/ultra96v2_0/ultra96v2_0.runs/synth_1/ultra96v2_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ultra96v2_top_utilization_synth.rpt -pb ultra96v2_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec  7 23:43:53 2019...

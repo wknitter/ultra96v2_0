@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xczu3eg-sbva484-1-e" LaunchTime="1575780130">
+  <File Type="PA-TCL" Name="ultra96v2_top.tcl"/>
+  <File Type="REPORTS-TCL" Name="ultra96v2_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="ultra96v2_top.vds"/>
+  <File Type="RDS-UTIL" Name="ultra96v2_top_utilization_synth.rpt"/>
+  <File Type="RDS-DCP" Name="ultra96v2_top.dcp"/>
+  <File Type="RDS-UTIL-PB" Name="ultra96v2_top_utilization_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/bd/ultra96v2_bd/ultra96v2_bd.bd">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ultra96v2_top.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/ultra96v2_bd/hdl/ultra96v2_bd_wrapper.v">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ultra96v2_top"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/ultra96v2_0.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/new/ultra96v2_0.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019"/>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="ultra96v2_bd_zynq_ultra_ps_e_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ultra96v2_bd_axi_bram_ctrl_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ultra96v2_bd_axi_gpio_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="ultra96v2_bd_rst_ps8_0_100M_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="ultra96v2_bd_axi_uart16550_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ultra96v2_bd_xbar_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ultra96v2_bd_blk_mem_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ultra96v2_bd_axi_gpio_0_0"/>
+</GenRun>

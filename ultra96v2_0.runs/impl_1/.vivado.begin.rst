@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="parallels" Host="parallels-Parallels-Virtual-Platform" Pid="6093" HostCore="8" HostMemory="32935408">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado" Owner="parallels" Host="parallels-Parallels-Virtual-Platform" Pid="17094" HostCore="8" HostMemory="32935408">
+    </Process>
+</ProcessHandle>
